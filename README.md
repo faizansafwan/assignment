@@ -1,7 +1,4 @@
-# Interview Assignment
-
-This repository contains the tasks for both frontend and backend candidates. Please follow the instructions below based on your role.
-
+# Interview Assignmen
 ## Frontend Task
 
 ### Requirements
