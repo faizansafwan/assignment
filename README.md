@@ -6,15 +6,7 @@ This repository contains the tasks for both frontend and backend candidates. Ple
 
 ### Requirements
 - Recreate the UI shown in the provided image
-- Use modern frontend technologies (React, Vue, or Angular)
-- Implement responsive design
-- Follow best practices for component structure and state management
-
-### Setup Instructions
-1. Create a new frontend project using your preferred framework
-2. Set up the necessary dependencies
-3. Implement the UI components
-4. Add proper documentation for your code
+- Start with the base template provided tailwind is setup
 
 ### Evaluation Criteria
 - Code organization and structure
@@ -45,26 +37,24 @@ This repository contains the tasks for both frontend and backend candidates. Ple
    - Return appropriate user data
 
 ### Setup Instructions
-1. Set up a new backend project
+1. Use the backend template provided
 2. Install necessary dependencies
-3. Implement the required routes and middleware
-4. Add proper documentation
+3. Placeholder routes and middleware exists feel free to edit or create more
+4. add comments to explain your code
 
 ### Evaluation Criteria
 - Code organization and structure
 - Security implementation
 - Error handling
-- API documentation
 - Code reusability
 - Testing implementation
 
 ## Submission Guidelines
 
-1. Fork this repository
-2. Create a new branch with your name
+1. clone this repository
 3. Implement the required features
 4. Add a detailed README.md explaining your implementation
-5. Submit a pull request
+5. create public git repo and submit the url 
 
 ## Additional Notes
 
@@ -76,4 +66,4 @@ This repository contains the tasks for both frontend and backend candidates. Ple
 
 ## Questions?
 
-If you have any questions about the assignment, please create an issue in this repository. 
+If you have any questions about the assignment, please contact gauth672@gmail.com 
