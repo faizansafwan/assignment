@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+
+  --color-primary: #182d55;
+  --color-primary-100: #182d55;
+  --color-primary-200: #24375e;
+  --color-primary-300: #26395f; 
+  --color-secondary: #6de0ff;
+  --color-secondary-100: #63a8c6;
+  --color-secondary-200: #596f8f;
+
+}
+
 @layer base {
   * {
     margin: 0;
