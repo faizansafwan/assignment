@@ -24,7 +24,7 @@ export default function DevicesLayout() {
                 {/* mapping the device list */}
                 {
                     devices.map((item, index) => (
-                        <div key={index} className="flex flex-row gap-3 p-2 border border-secondary m-2 rounded-md text-white 
+                        <div key={index} className="flex flex-row gap-3 p-2 border border-secondary mx-2 my-3 rounded-md text-white 
                         cursor-pointer hover:bg-secondary hover:text-primary hover:shadow-lg transition ease-out duration-300">
                             <div>{item.icon}</div>
                             <div><p className="font-thin">{item.name}</p></div>

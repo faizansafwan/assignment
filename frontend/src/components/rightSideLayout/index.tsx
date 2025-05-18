@@ -102,37 +102,39 @@ export default function GeneralCommands() {
             <div className="mx-4">
                 <div className="mb-1"><h4 className="text-xs">STAYS</h4></div>
 
-                
                 {/* mapping the list of stays */}
                 {
-                    stays.map( (item, index) => { 
-                        
+                    stays.map((item, index) => {
                         const isLastIndex = index === stays.length - 1;
                         const isOpen = openIndex === index;
 
-                        return(
-                        <div key={index} className={`text-secondary-200 ${!isLastIndex ? 'border-b' : ''}`}>
-
-                            {/* Stay name row with dropdown icon */}
-                            <div className="flex flex-row justify-between text-xs py-3 cursor-pointer" 
-                                onClick={() => toggleDropdown(index)}>
-
-                                <div>{item}</div>
-                                <div><FaChevronDown className={`text-xs transform transition-transform duration-200 
-                                    ${isOpen ? 'rotate-180' : ''}`}/>
+                        return (
+                            <div key={index} className={`text-secondary-200 ${!isLastIndex ? 'border-b' : ''}`}>
+                                
+                                {/* Stay name row with dropdown icon */}
+                                <div className="flex flex-row justify-between text-xs py-3 cursor-pointer"
+                                    onClick={() => toggleDropdown(index)} >
+                                    <div>{item}</div>
+                                    <div>
+                                        <FaChevronDown className={`text-xs transform transition-transform duration-200 
+                                            ${isOpen ? 'rotate-180' : ''}`} />
+                                    </div>
                                 </div>
 
+                                {/* Dropdown content with animation */}
+                                <div className={`overflow-hidden transition-all duration-300 ease-in-out 
+                                        ${isOpen ? 'max-h-20 opacity-100' : 'max-h-0 opacity-0'}`}>
+
+                                    <div className="text-[10px] px-2 pb-2">
+                                        <p>Dropdown content for {item}</p>
+                                    </div>
+
+                                </div>
                             </div>
-
-                            {/* Dropdown content */}
-                            {isOpen && (
-                                <div className="text-[10px] px-2 pb-2">
-                                    <p>Dropdown content for {item}</p>
-                                </div>
-                            )}
-                        </div>
-                    )})
+                        );
+                    })
                 }
+
 
             </div>
         </div>
