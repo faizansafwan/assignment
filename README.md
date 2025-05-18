@@ -1,66 +1,59 @@
-# Interview Assignmen
-## Frontend Task
+# Frontend Dashboard
 
-### Requirements
-- Recreate the UI shown in the provided image
-- Start with the base template provided tailwind is setup
+A responsive Smart Home Dashboard built with **React** and **Tailwind CSS**. It visually displays and manages home devices—both interior and exterior—using a clean, modern UI. Designed for seamless user interaction with real-time control elements.
 
-### Evaluation Criteria
-- Code organization and structure
-- Component reusability
-- State management implementation
-- UI/UX accuracy
-- Responsive design implementation
-- Code documentation
+---
 
-## Backend Task
 
-### Requirements
-1. **Authentication System**
-   - Create a login route that returns a JWT authentication token
-   - Implement proper password hashing
-   - Include input validation
-   - Return appropriate error messages
+## Features
 
-2. **JWT Middleware**
-   - Create a middleware function to verify JWT authentication tokens
-   - Handle token expiration
-   - Implement proper error handling
-   - Secure routes using the middleware
+- **Modular Components** — Header, Sidebar, Devices, and Controls
+- **Dark Themed UI** — Tailwind-powered custom theme
+- **Responsive Layout** — Optimized for desktop and mobile views
+- **Device Management** — Grouped views for interior and exterior smart devices
+- **Interactive UI Elements** — Icons, hover effects, and transitions
 
-3. **Protected Account Route**
-   - Create an account route that can only be accessed using a valid JWT token
-   - Implement proper error handling
-   - Return appropriate user data
 
-### Setup Instructions
-1. Use the backend template provided
-2. Install necessary dependencies
-3. Placeholder routes and middleware exists feel free to edit or create more
-4. add comments to explain your code
+## Tech Stack
 
-### Evaluation Criteria
-- Code organization and structure
-- Security implementation
-- Error handling
-- Code reusability
-- Testing implementation
+- **React.js** — UI Library
+- **Tailwind CSS** — Utility-first CSS framework
+- **React Icons** — Icon library
 
-## Submission Guidelines
+---
 
-1. clone this repository
-3. Implement the required features
-4. Add a detailed README.md explaining your implementation
-5. create public git repo and submit the url 
+## How to Run
 
-## Additional Notes
+### 1. Clone the repo
 
-- Use proper error handling throughout the application
-- Implement input validation
-- Follow security best practices
-- Add comments to explain complex logic
-- Include setup instructions in your README
+```bash
+git clone https://github.com/faizansafwan/assignment.git
+cd assignment
+```
 
-## Questions?
+### 2. Install dependencies
 
-If you have any questions about the assignment, please contact gauth672@gmail.com 
+```bash 
+npm install
+# or
+yarn install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+### 4. Open in browser
+Visit: http://localhost:5173 (or the default port shown in your terminal)
+
+
+---
+
+
+---
+
+# Backend
