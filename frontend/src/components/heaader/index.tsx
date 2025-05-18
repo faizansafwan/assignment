@@ -9,7 +9,7 @@ export default function Header() {
             <div className="flex items-center gap-3">
 
                 {/* header logo */}
-                <div className="pr-3 border-r border-secondary-200 py-3 text-xl sm:text-3xl">
+                <div className="pr-3 border-r border-secondary-200 py-4 sm:py-3 text-xl sm:text-3xl">
                     <h1><b className="text-secondary">G</b>S</h1>
                 </div>
 
@@ -22,7 +22,7 @@ export default function Header() {
 
             {/* profile image */}
             <div>
-                <div className="px-2 py-2">
+                <div className="px-2 py-2 cursor-pointer">
                     <img src={profile} width={40} height={40} alt="" />
                 </div>
             </div> 
