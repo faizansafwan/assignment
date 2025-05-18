@@ -1,24 +1,26 @@
+// Import required modules
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
-const connectDB = require('./db/dbConfig.js');
+require('dotenv').config(); // Load environment variables from .env file
 
-const loginRoutes = require('./routes/login.js');
-const accountRoutes = require('./routes/account.js');
+// Import custom modules
+const connectDB = require('./db/dbConfig.js'); 
 const userRoutes = require('./routes/user.js');
 
+// Initialize Express app
 const app = express();
 const port = process.env.PORT || 5000;
 
-// Middleware
 app.use(cors());
+
+// Parse incoming JSON requests
 app.use(express.json());
+
+// Parse URL-encoded data
 app.use(express.urlencoded({ extended: true })); 
 
-// Routes
+// All user-related API routes prefixed with /api/user
 app.use('/api/user', userRoutes);
-app.use('/api/login', loginRoutes);
-app.use('/api/account', accountRoutes);
 
 // Basic route
 app.get('/', (req, res) => {
@@ -26,7 +28,10 @@ app.get('/', (req, res) => {
 });
 
 
-// Connect to database and start server
+/**
+ * Connects to MongoDB and starts the server.
+ * Exits process on error.
+ */
 const startServer = async () => {
   try {
     await connectDB();
