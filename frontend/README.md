@@ -2,8 +2,6 @@
 
 A responsive Smart Home Dashboard built with **React** and **Tailwind CSS**. It visually displays and manages home devices—both interior and exterior—using a clean, modern UI. Designed for seamless user interaction with real-time control elements.
 
----
-
 
 ## Features
 
@@ -20,7 +18,6 @@ A responsive Smart Home Dashboard built with **React** and **Tailwind CSS**. It 
 - **Tailwind CSS** — Utility-first CSS framework
 - **React Icons** — Icon library
 
----
 
 ## How to Run
 
@@ -46,4 +43,7 @@ npm run dev
 # or
 yarn dev
 ```
+
+### 4. Open in browser
+Visit: http://localhost:5173 (or the default port shown in your terminal)
 
