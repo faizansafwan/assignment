@@ -16,7 +16,6 @@ export default function Dashboard() {
 
                 {/* layout for Left side abr */}
                 <div><LeftSideBar /></div>
-
                 
                 <div className="flex-1 flex lg:flex-row flex-col justify-between">
                     <div className="mx-5 mt-7 flex flex-col">
@@ -25,6 +24,7 @@ export default function Dashboard() {
                             <div> <button className="md:text-sm text-xs bg-secondary p-2 rounded-sm cursor-pointer hover:bg-secondary-100 transition ease-in duration-300">+ Add Device</button></div>
                         </div>
 
+                        
                         <div className="flex md:flex-row flex-col gap-10 mt-6">
                             {/* layout for list of devices */}
                             <div className="mb-2 bg-primary-200 rounded-sm"><DevicesLayout /></div>
@@ -37,8 +37,7 @@ export default function Dashboard() {
                     {/* content for right side corner */}
                     {/* Layout for general commands */}
                     <div className="m-5 lg:m-0"><GeneralCommands /></div>
-                </div>
-                
+                </div> 
                 
             </div>
         </div>

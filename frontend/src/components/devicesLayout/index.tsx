@@ -5,7 +5,7 @@ import { MdRouter } from "react-icons/md";
 
 export default function DevicesLayout() {
 
-    // Device list
+    // Device list with icon and name
     const devices = [
         {icon: <FaWarehouse size={24} />, name: "House Exterior"},
         {icon: <FaLightbulb size={24} />, name: "Lights"},
@@ -18,6 +18,7 @@ export default function DevicesLayout() {
     return (
         <div className="py-3 md:px-5 px-3 bg-primary-200 rounded-sm">
             <div> 
+                {/* Device header */}
                 <div><h3 className="text-md sm:text-lg text-white px-2">Devices</h3></div>
 
                 {/* mapping the device list */}
