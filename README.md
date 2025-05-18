@@ -111,7 +111,7 @@ node src/server.js
 ## API Endpoints
 
 ```bash
-Post 	/api/user/register # Register a new user
+Post /api/user/register # Register a new user
 Post /api/user/login # Authenticate user
 get /api/user/me # Get logged-in user info
 ```
