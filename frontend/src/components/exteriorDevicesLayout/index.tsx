@@ -1,9 +1,18 @@
+import type { ReactElement } from "react"
 import { FaUmbrella, FaVideo, FaWarehouse } from "react-icons/fa"
 import { GiDeskLamp } from "react-icons/gi"
 import { HiHomeModern } from "react-icons/hi2"
 
+/**
+ * ExteriorDevicesLayout Component
+ *
+ * Displays a grid of smart exterior home devices, each showing its icon, name, and status.
+ * Some key devices (like cameras and garage door) are visually highlighted for emphasis.
+ *
+ * @returns {JSX.Element} A grid of exterior device cards
+ */
 
-export default function ExteriorDevicesLayout() {
+export default function ExteriorDevicesLayout(): ReactElement {
 
     // List of exterior devices with icon, name, and current status
     const devices = [
@@ -17,12 +26,13 @@ export default function ExteriorDevicesLayout() {
 
     return(
         <div className="py-3 md:px-5 px-3 border border-secondary rounded-md text-white">
+
             <div>
 
                 {/* Section Header */}
                 <div><h3 className="text-md sm:text-lg text-white mb-2">Home Exterior Devices</h3></div>
 
-                {/* Grid layout for rendering device cards */}
+                {/* Grid layout for displaying devices */}
                 <div className="grid grid-cols-2 gap-6">
                     {
                         devices.map( (item, index) => { 

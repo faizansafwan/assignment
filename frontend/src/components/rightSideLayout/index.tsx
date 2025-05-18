@@ -12,10 +12,10 @@ export default function GeneralCommands() {
 
     // List of stays
     const stays = ["Kitchen", "Living Room", "Bedrooms", "Bath", "Garden"];
-    const [openIndex, setOpenIndex] = useState(null); // tracks which dropdown is open
+    const [openIndex, setOpenIndex] = useState<number | null>(null); // tracks which dropdown is open
 
     // Function to toggle dropdown open/close
-    const toggleDropdown = (index) => {
+    const toggleDropdown = (index: number) => {
         setOpenIndex(openIndex === index ? null : index); // toggle open/close
     };
     
