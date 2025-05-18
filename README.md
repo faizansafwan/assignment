@@ -26,7 +26,7 @@ A responsive Smart Home Dashboard built with **React** and **Tailwind CSS**. It 
 
 ```bash
 git clone https://github.com/faizansafwan/assignment.git
-cd assignment
+cd assignment/frontend
 ```
 
 ### 2. Install dependencies
@@ -52,4 +52,66 @@ Visit: http://localhost:5173 (or the default port shown in your terminal)
 ---
 ---
 
-# Backend 
+# Backend Node.js Authentication API
+
+This is a simple and secure RESTful API built with Node.js, Express, and MongoDB that handles user registration, login, and authentication using JWT (JSON Web Tokens). It includes password hashing with bcrypt and validation via express-validator.
+
+
+## Features
+
+- **User registration with hashed passwords** 
+- **User login with JWT authentication**
+- **Secure protected route to get logged-in user details** 
+- **Password hashing using bcryptjs**
+- **MongoDB connection with mongoose**
+- **Environment variable support with dotenv**
+
+## Tech Stack
+
+- **Express** 
+- **MongoDB & Mongoose**
+- **JWT** 
+- **bcryptjs**
+- **dotenv**
+- **express-validator**
+
+
+## How to Run
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/faizansafwan/assignment.git
+cd assignment/backend
+```
+
+### 2. Install dependencies
+
+```bash 
+npm install
+```
+
+### 3. Configuration 
+
+Create a .env file in the root of the project and add:
+
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+```
+
+### 4. Start the development server
+
+```bash
+node src/server.js
+```
+
+
+## API Endpoints
+
+```bash
+Post 	/api/user/register # Register a new user
+Post /api/user/login # Authenticate user
+get /api/user/me # Get logged-in user info
+```
