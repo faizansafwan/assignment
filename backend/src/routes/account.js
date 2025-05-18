@@ -3,7 +3,7 @@ const router = express.Router();
 const dbFunctions = require('../db/dbFunctions');
 
 // Get account details
-router.get('/',authMiddleware, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     // TODO: Implement get account logic
     //get user details from request that was added by authMiddleware
